@@ -25,13 +25,13 @@ generateBtn.addEventListener("click", function () {
 });
 
 // Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+function generatePassword() {
+  enter = parseInt(prompt("How many characters in your password? Choose between 8 and 128"));
+  if (!enter) {
+      alert("This needs a value");
+  } else if (enter < 8 || enter > 128) {
+      enter = parseInt(prompt("You must enter between 8 and 128"));
 
-  passwordText.value = password;
-
-}
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
