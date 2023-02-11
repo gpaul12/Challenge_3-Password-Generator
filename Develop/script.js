@@ -72,5 +72,14 @@ function generatePassword() {
     choices = number.concat(alpha2);
   }
 
+  else if (confirmCharacter) {
+    choices = character;
+  }
+  else if (confirmNumber) {
+    choices = number;
+  }
+  
+
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
