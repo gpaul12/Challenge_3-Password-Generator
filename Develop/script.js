@@ -23,7 +23,7 @@ generateBtn.addEventListener("click", function () {
   document.getElementById("password").placeholder = ps;
 });
 
-function generatePassword() {
+function writePassword() {
   enter = parseInt(prompt("How many characters in your password? Choose between 8 and 128"));
   if (!enter) {
       alert("This needs a value");
