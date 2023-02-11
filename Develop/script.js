@@ -31,6 +31,13 @@ function generatePassword() {
       alert("This needs a value");
   } else if (enter < 8 || enter > 128) {
       enter = parseInt(prompt("You must enter between 8 and 128"));
+  } else {
+      confirmNumber = confirm("Would you like numbers?");
+      confirmCharacter = confirm("Would you like special characters?");
+      confirmUppercase = confirm("Would you like Uppercase letters?");
+      confirmLowercase = confirm("Would you like Lowercase letters?");
+  };
+
 
 
 // Add event listener to generate button
