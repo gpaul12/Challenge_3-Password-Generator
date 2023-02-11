@@ -1,4 +1,4 @@
-# Password Generator Starter Code
+# Password Generator
 
 # User Story
 
@@ -31,3 +31,7 @@
 ![](./Develop/03-javascript-homework-demo.png)
 
 A screenshot displays a sample password generator.
+
+# Description
+
+-
