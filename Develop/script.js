@@ -56,11 +56,15 @@ function generatePassword() {
   else if (confirmNumber && confirmLowercase && confirmUppercase) {
     choices = number.concat(alpha, alpha2);
   }
+
   else if (confirmCharacter && confirmNumber) {
     choices = character.concat(number);
   } else if (confirmCharacter && confirmNumber) {
     choices = character.concat(alpha);
+  } else if (confirmCharacter && confirmUppercase) {
+    choices = character.concat(alpha2);
   }
 
+  
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
