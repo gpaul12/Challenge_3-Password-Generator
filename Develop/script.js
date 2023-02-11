@@ -1,5 +1,4 @@
 // Assignment code here
-var enter;
 var confirmNumber;
 var confirmCharacter;
 var confirmUppercase;
@@ -24,6 +23,7 @@ generateBtn.addEventListener("click", function () {
 });
 
 function writePassword() {
+  var enter;
   enter = parseInt(prompt("How many characters in your password? Choose between 8 and 128"));
   if (!enter) {
       alert("This needs a value");
@@ -39,11 +39,10 @@ function writePassword() {
     options = alert("You must choose a criteria!");
   }
   else if (confirmCharacter && confirmNumber && confirmUppercase && confirmLowercase) {
-
     options = character.concat(number, alpha, alpha2);
   }
   else if (confirmCharacter && confirmNumber && confirmUppercase) {
-  options = character.concat(number, alpha2);
+    options = character.concat(number, alpha2);
   }
   else if (confirmCharacter && confirmNumber && confirmLowercase) {
     options = character.concat(number, alpha);
@@ -86,7 +85,7 @@ function writePassword() {
   var password = [];
 
   for (var i = 0; i < enter; i++) {
-    var pickOptions = options[Math.floot(Math.random() * options.length)];
+    var pickOptions = options[Math.floor(Math.random() * options.length)];
     password.push(pickOptions);
   }
   var ps = password.join("");
