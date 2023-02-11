@@ -16,7 +16,6 @@ var toUpper = function (upper) {
 };
 alpha2 = alpha.map(toUpper);
 
-// Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
 generateBtn.addEventListener("click", function () {
@@ -91,3 +90,7 @@ function generatePassword() {
     var pickOptions = options[Math.floot(Math.random() * options.length)];
     password.push(pickOptions);
   }
+  var ps = password.join("");
+  UserInput(ps);
+  return ps;
+}
