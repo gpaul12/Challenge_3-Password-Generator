@@ -20,7 +20,7 @@ alpha2 = alpha.map(toUpper);
 var generateBtn = document.querySelector("#generate");
 
 generateBtn.addEventListener("click", function () {
-  ps = generatePassword();
+  ps = writePassword();
   document.getElementById("password").placeholder = ps;
 });
 
