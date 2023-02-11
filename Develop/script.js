@@ -78,7 +78,9 @@ function generatePassword() {
   else if (confirmNumber) {
     options = number;
   }
-
+  else if (confirmLowercase) {
+    options = alpha;
+  }
 
 
 // Add event listener to generate button
