@@ -37,7 +37,8 @@ function generatePassword() {
       confirmUppercase = confirm("Would you like Uppercase letters?");
       confirmLowercase = confirm("Would you like Lowercase letters?");
   };
-
+  if (!confirmCharacter && !confirmNumber && !confirmUppercase && !confirmLowercase) {
+    choices = alert("You must choose a criteria!");
 
 
 // Add event listener to generate button
