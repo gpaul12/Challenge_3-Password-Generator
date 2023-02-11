@@ -85,7 +85,4 @@ function generatePassword() {
     options = space.concat(alpha2);
   };
 
-
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+  var password = [];
