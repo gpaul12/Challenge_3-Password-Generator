@@ -86,3 +86,8 @@ function generatePassword() {
   };
 
   var password = [];
+
+  for (var i = 0; i < enter; i++) {
+    var pickOptions = options[Math.floot(Math.random() * options.length)];
+    password.push(pickOptions);
+  }
