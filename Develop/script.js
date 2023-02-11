@@ -39,7 +39,8 @@ function generatePassword() {
   };
   if (!confirmCharacter && !confirmNumber && !confirmUppercase && !confirmLowercase) {
     choices = alert("You must choose a criteria!");
-
+  }
+  
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
