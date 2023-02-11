@@ -11,8 +11,8 @@ alpha = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "
 space = [];
 
 var options;
-var toUpper = function (x) {
-  return x.toUpperCase();
+var toUpper = function (upper) {
+  return upper.toUpperCase();
 };
 alpha2 = alpha.map(toUpper);
 
@@ -85,7 +85,7 @@ function generatePassword() {
     options = space.concat(alpha2);
   };
 
-  
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
