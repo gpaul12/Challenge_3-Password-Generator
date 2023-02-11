@@ -14,9 +14,15 @@ var choices;
 var toUpper = function (x) {
   return x.toUpperCase();
 };
+alpha2 = alpha.map(toUpper);
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
+
+generateBtn.addEventListener("click", function () {
+  ps = generatePassword();
+  document.getElementById("password").placeholder = ps;
+});
 
 // Write password to the #password input
 function writePassword() {
