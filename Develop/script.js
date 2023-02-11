@@ -1,5 +1,9 @@
 // Assignment code here
-
+var enter;
+var confirmNumber;
+var confirmCharacter;
+var confirmUppercase;
+var confirmLowercase;
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
