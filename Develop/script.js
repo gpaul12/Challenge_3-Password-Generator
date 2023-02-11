@@ -40,7 +40,10 @@ function generatePassword() {
   if (!confirmCharacter && !confirmNumber && !confirmUppercase && !confirmLowercase) {
     choices = alert("You must choose a criteria!");
   }
-  
+  else if (confirmCharacter && confirmNumber && confirmUppercase && confirmLowercase) {
+
+    choices = character.concat(number, alpha, alpha2);
+}
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
