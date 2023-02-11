@@ -10,7 +10,7 @@ number = [0,1, 2, 3, 4, 5, 6, 7, 8, 9];
 alpha = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 space = [];
 
-var choices;
+var options;
 var toUpper = function (x) {
   return x.toUpperCase();
 };
@@ -38,47 +38,47 @@ function generatePassword() {
       confirmLowercase = confirm("Would you like Lowercase letters?");
   };
   if (!confirmCharacter && !confirmNumber && !confirmUppercase && !confirmLowercase) {
-    choices = alert("You must choose a criteria!");
+    options = alert("You must choose a criteria!");
   }
   else if (confirmCharacter && confirmNumber && confirmUppercase && confirmLowercase) {
 
-    choices = character.concat(number, alpha, alpha2);
+    options = character.concat(number, alpha, alpha2);
   }
   else if (confirmCharacter && confirmNumber && confirmUppercase) {
-  choices = character.concat(number, alpha2);
+  options = character.concat(number, alpha2);
   }
   else if (confirmCharacter && confirmNumber && confirmLowercase) {
-    choices = character.concat(number, alpha);
+    options = character.concat(number, alpha);
   }
   else if (confirmCharacter && confirmLowercase && confirmUppercase) {
-    choices = character.concat(alpha, alpha2);
+    options = character.concat(alpha, alpha2);
   }
   else if (confirmNumber && confirmLowercase && confirmUppercase) {
-    choices = number.concat(alpha, alpha2);
+    options = number.concat(alpha, alpha2);
   }
 
   else if (confirmCharacter && confirmNumber) {
-    choices = character.concat(number);
+    options = character.concat(number);
   } else if (confirmCharacter && confirmNumber) {
-    choices = character.concat(alpha);
+    options = character.concat(alpha);
   } else if (confirmCharacter && confirmUppercase) {
-    choices = character.concat(alpha2);
+    options = character.concat(alpha2);
   }
   else if (confirmLowercase && confirmNumber) {
-    choices = alpha.concat(number);
+    options = alpha.concat(number);
   } else if (confirmLowercase && confirmUppercase) {
-    choices = alpha.concat(alpha2);
+    options = alpha.concat(alpha2);
   } else if (confirmNumber && confirmUppercase) {
-    choices = number.concat(alpha2);
+    options = number.concat(alpha2);
   }
 
   else if (confirmCharacter) {
-    choices = character;
+    options = character;
   }
   else if (confirmNumber) {
-    choices = number;
+    options = number;
   }
-  
+
 
 
 // Add event listener to generate button
